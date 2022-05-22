@@ -1,0 +1,641 @@
+<html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<style>
+    body{
+        background:gray;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .head {
+        background-color: transparent;
+        border-radius: 1px;
+        margin: 1px 0px;
+        
+        background-image: url("12.jpg");
+        width: 100%;
+        height: 20%;
+        
+    }
+
+                                                        /* Logo bar */
+
+    .header-img {
+        height: 11%;
+        width: 6%;
+        padding: 15px 105px;
+        position: absolute;
+        
+    }
+
+    .logo {
+        color:rgb(249, 255, 80);
+        padding: 27px 190px;
+        font-family: segoe script;
+        text-shadow:1px 2px 3px #000;
+        font-size: 145%;
+        }
+
+    .c1 {
+        font-size: medium;
+        color: white;
+        margin-left: 68%;
+        padding: 65px;
+        position: absolute;
+        float: left;
+        text-shadow: 2px 2px 3px black;
+        cursor: pointer;
+    }
+
+    .c2 {
+        font-size: medium;
+        color: white;
+        margin-left: 80%;
+        padding: 65px;
+        position: absolute;
+        float: left;
+        text-shadow: 2px 2px 3px black;
+        cursor: pointer;
+        
+    }
+    .c2 a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .tel {
+        position: absolute;
+        padding: 65px;
+        width: 17px;
+        height: 20px;
+        margin-left: 66.6%;
+        color: white;
+        cursor: pointer;
+    }
+
+    .tel1 {
+        position: absolute;
+        padding: 58px;
+        width: 55px;
+        height: 30px;
+        margin-left: 77.5%;
+        cursor: pointer;
+    }
+
+                                                    /* Navigation bar */
+
+    .menu {
+
+        padding: 16px 0px;
+        margin: 22px 0px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-color: black;
+        border-radius: 0px;
+        bottom: 70%;
+        display: block ruby;
+
+        
+    }
+    
+
+    .menu li a{
+        
+        padding: 0px 20px;
+        text-decoration: none;
+        color: white;
+        float: left;
+        font-size: 17px;
+        display: inline;
+
+
+       
+
+    }
+
+    .menu li a:hover {
+        color: red;
+    }
+
+    .search {
+        float: right;
+        color: white;
+        position: absolute;
+        margin: -18px 24px;
+        right: 90px;
+
+    }
+
+    .menu input {
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 2px 32px;
+        width: 185px;
+        float: right;
+
+    }
+    
+
+    * {
+        padding: 0;
+        margin: 0;
+      
+    }
+
+                                                        /* Slider */
+
+    .slowFade {
+        display: flex;
+        align-items: flex-start;
+        background: #fff;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        margin: 46px 0px;
+    }
+
+    .slowFade .slide img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        height: 100%;
+        background: #000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        opacity: 0;
+        transform: scale(1.5) rotate(15deg);
+        -webkit-animation: slowFade 32s infinite;
+        animation: slowFade 32s infinite;
+    }
+
+    .slowFade .slide:nth-child(3) img {
+        -webkit-animation-delay: 8s;
+        animation-delay: 8s;
+    }
+
+    .slowFade .slide:nth-child(2) img {
+        -webkit-animation-delay: 16s;
+        animation-delay: 16s;
+    }
+
+    .slowFade .slide:nth-child(1) img {
+        -webkit-animation-delay: 24s;
+        animation-delay: 24s;
+    }
+
+    @keyframes slowFade {
+        25% {
+            opacity: 1;
+            transform: scale(1) rotate(0);
+        }
+
+        40% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes slowFade {
+        25% {
+            opacity: 1;
+            transform: scale(1) rotate(0);
+        }
+
+        40% {
+            opacity: 0;
+        }
+    }
+
+                                              /* Div code for slider below  */
+
+    .div2 img {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        margin: -53px 0px;
+    }
+
+    #about {
+        margin: 116px 342px;
+        font-size: 400%;
+        color: #fff;
+        text-align: left;
+        position: absolute;
+        text-align: start;
+        text-shadow: 2px 2px #000000;
+       
+    }
+    .video iframe{
+        position:absolute ;
+        width: 501px;
+        height:348px;
+        margin-left: 5%;
+        margin-top: 19%; 
+        box-shadow: 2px 4px 7px black;
+        border-radius: 10px;
+    }
+
+    .p1 {
+        position: absolute;
+        padding-left: 0px;
+        margin: -2% 43%;
+        text-decoration: solid;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        border: 10px rgb(13, 13, 15);
+        padding: 15px;
+        background: rgba(250, 250, 250, 0.217);
+        background-clip: padding-box;
+        width: 42%;
+        box-shadow: 7px 6px 37px 6px #000;
+        text-shadow: #000;
+        text-align: center;
+        border-radius: 44px;
+        font-family: italic;
+
+
+    }
+
+                                                    /* categ code */
+
+    #categ{
+        text-align: left;
+        margin: -5.5% 39%;
+        font-size: 357%;
+        /* width: 220px;
+        height: 50px; */
+        border: none;
+        outline: none;
+        color: #fff;
+        background:darkgray;
+        cursor: pointer;
+        position: absolute;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    #categ{
+    width: 308px;
+    height: 64px;
+    border: none;
+    outline: none;
+    color: black;
+    background: darkgray;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 90px;
+
+    }
+    #categ::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#categ:active {
+    color: #000
+}
+
+#categ:active:after {
+    background: transparent;
+}
+
+#categ:hover:before {
+    opacity: 1;
+}
+
+#categ:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:darkslategray;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+                                               /* sofa img  */
+
+    .sofa1 img{
+
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        margin-top: 47%;
+
+        
+    }
+    .sname{
+        margin-top: -34%;
+        position: absolute;
+        margin-left:50%;
+        font-size: 50;
+        text-shadow: 1px 3px 5px black;
+        font-style: italic;
+        
+    }
+    .sname a{
+        text-decoration: none;
+    }
+    .sofa1 img{
+        text-shadow: 1px 3px 5px black;
+        border-radius: 4px;
+        border: 2px white;
+       
+    }
+    .sofa1 img:hover{
+        box-shadow: 8px 3px 15px 1px black;
+        border-color: white;
+    }
+    
+                                              /* chair2 img  */
+
+    .chair2 img {
+        left: 0;
+        right: 0;
+        margin-top: 1%;
+        display: flex;
+        width: 100%;
+        height: 95%;
+        
+    }
+    .cname{
+        margin-top: -25%;
+        position: absolute;
+        margin-left:65%;
+        font-size: 50;
+        text-shadow: 1px 3px 5px black;
+        font-style: italic;
+    }
+    .cname a{
+        text-decoration: none;
+    }
+    .chair2 img{
+        text-shadow: 1px 3px 5px black;
+        border-radius: 4px;
+        border: 2px white;
+    }
+    .chair2 img:hover{
+        box-shadow: 8px 3px 15px 1px black;
+        border-color: white;
+    }
+
+                                            /* table img  */
+
+    .table3 img {
+        left: 0;
+        right: 0;
+        margin-top: 1%;
+        display: flex;
+        width: 100%;
+        height: 97%;
+        
+    }
+    .tname{
+        margin-top: -42%;
+        position: absolute;
+        margin-left:49%;
+        font-size: 50;
+        text-shadow: 1px 3px 5px black;
+        font-style: italic;
+    }
+    .table3 img{
+        text-shadow: 1px 3px 5px black;
+        border-radius: 4px;
+        border: 2px white;
+    }
+    .table3 img:hover{
+        box-shadow: 8px 3px 15px 1px black;
+        border-color: white;
+    }
+
+                                            /* frame img  */
+
+    .frame4 img {
+        left: 0;
+        right: 0;
+        margin-top: 1%;
+        display: flex;
+        width: 100%;
+        height: 97%;
+        
+    }
+    .fname{
+        margin-top: -42%;
+        position: absolute;
+        margin-left:45%;
+        font-size: 50;
+        text-shadow: 1px 3px 5px black;
+        font-style: italic;
+    }
+    .frame4 img{
+        text-shadow: 1px 3px 5px black;
+        border-radius: 4px;
+        border: 2px white;
+    }
+    .frame4 img:hover{
+        box-shadow: 8px 3px 15px 1px black;
+        border-color: white;
+    }
+    
+                                             /* footer  */
+
+    .footer-basic {
+  padding:3px 0;
+  background-color:#000000;
+  color:#f21717;
+  padding: 1px;
+  
+}
+
+.footer-basic ul {
+  padding:62px;
+  list-style:none;
+  text-align:center;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:14px;
+  color: white;
+  margin-top: 2%;
+  
+ 
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:23px;
+  margin-bottom: -78px;
+  margin-top: 25px;
+  padding: 1px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  padding: 1px;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:-58px;
+  text-align:center;
+  font-size:12px;
+  color:rgb(247, 226, 122);
+  margin-bottom:0;
+  padding: 10px;
+}
+
+    
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <div class="head">
+        <header id="header">
+            <img class="header-img" src="ch.png">
+            <h5 class="c1">+00125647</h5>
+            <h5 class="c2"><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">furniture@zemez.io</a></h5>
+            <img class="tel" src="tel.png">
+            <img class="tel1" src="gmail.png">
+
+        </header>
+
+        <div class="logo">
+            <h1>Furnicom</h1>
+
+        </div>
+    </div>
+    <div class="menu">
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#categ">Categories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About us</a></li>
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="Search this website">
+    </div>
+    </div>
+
+    <div class="slides slowFade">
+        <div class="slide">
+            <img src="14.jpg" alt="img" />
+        </div>
+        <div class="slide">
+            <img src="55.jpg" alt="img" />
+        </div>
+        <div class="slide">
+            <img src="19.jpg" alt="img" />
+        </div>
+        <div class="slide">
+            <img src="24.jpg" alt="img" />
+        </div>
+    </div>
+    <div class="div2">
+        <img src="1.jpg">
+    </div>
+    <div>
+        <h1 id="about">About us</h1>
+    </div>
+    <div class="video">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BAP_L8UlF1k?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    
+    </div>
+    <div>
+        <p class="p1">
+            Furnicom is a furniture-producing company which <br>items can be characterized as unique, non-conformist and
+            <br>authentic – never boring and always full of imagination<br> and inspiration.Furnicom succeeds for years
+            in tracking down style <br>icons, developing trends and innovations in <br>furniture design, and using them
+            to fulfil the dreams <br>of furnishing enthusiasts.With the courage to innovate, Furnicom creates trends and
+            unique furnishing collections being affordable and desirable for all people. As an international supplier
+            and generator of change Furnicom continues creating new furnishing designs and art objects.
+        </p>
+    </div>
+
+
+        <div class="div1">
+            <div id="categ">~Categories~</div>
+            <div class="sofa1"><img src="23.jpg">
+                <div class="sname"><a href="Sofa.html">Sofa</a></div>
+            <div class="chair2"><img src="chair2.jpg">
+                <div class="cname"><a href="chair.html">Chair</a></div>
+            <div class="table3"><img src="55.jpg">
+                <div class="tname">Table</div>
+            <div class="frame4"><img src="3.jpg">
+                <div class="fname">Frames</div></div>
+        </div>
+    
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#categ">Categories</a></li>
+                    <li class="list-inline-item"><a href="#about">About us</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Company Name © 2018</p>
+            </footer>
+        </div>
+        
+    
+</body>
+</html>
